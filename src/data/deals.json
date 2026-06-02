@@ -1,34 +1,34 @@
 [
   {
     "id": 1,
-    "restaurant": "La Paloma",
-    "deal": "Free chips & queso with any meal purchase",
-    "validThrough": "This weekend only",
-    "showNote": "Show this screen to your server",
-    "emoji": "🧀"
+    "restaurant": "Macy's Kitchen and Cafe",
+    "deal": "Free drink with any meal",
+    "validThrough": "Tournament weekends",
+    "showNote": "Show this screen to redeem",
+    "emoji": "☕"
   },
   {
     "id": 2,
-    "restaurant": "Burger Barn",
-    "deal": "Kids eat free on Saturday & Sunday (one per adult meal)",
+    "restaurant": "Alameda Restaurant",
+    "deal": "10% off your total order",
     "validThrough": "Tournament weekends",
-    "showNote": "Mention the tournament when ordering",
-    "emoji": "🍔"
+    "showNote": "Show this screen to redeem",
+    "emoji": "🌮"
   },
   {
     "id": 3,
-    "restaurant": "Pizza Palace",
-    "deal": "10% off your entire order for groups of 8 or more",
-    "validThrough": "All weekend",
-    "showNote": "Show this screen at the register",
-    "emoji": "🍕"
+    "restaurant": "Taqueria Don Juan",
+    "deal": "Free chips & salsa with any order",
+    "validThrough": "Tournament weekends",
+    "showNote": "Show this screen to redeem",
+    "emoji": "🫔"
   },
   {
     "id": 4,
-    "restaurant": "El Ranchito",
-    "deal": "Free fountain drink with any combo plate",
-    "validThrough": "Friday – Sunday",
-    "showNote": "Show this screen to your server",
-    "emoji": "🥤"
+    "restaurant": "Obee's Mexican & Seafood",
+    "deal": "Free dessert with any meal",
+    "validThrough": "Tournament weekends",
+    "showNote": "Show this screen to redeem",
+    "emoji": "🦐"
   }
 ]

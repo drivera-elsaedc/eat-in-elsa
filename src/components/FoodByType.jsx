@@ -3,12 +3,11 @@ import restaurants from '../data/restaurants.json'
 import './FoodByType.css'
 
 const categories = [
-  { id: 'all', label: 'All', emoji: '🍽️' },
-  { id: 'tacos', label: 'Tacos', emoji: '🌮' },
-  { id: 'burgers', label: 'Burgers', emoji: '🍔' },
-  { id: 'family', label: 'Family Dining', emoji: '👨‍👩‍👧‍👦' },
-  { id: 'quickbites', label: 'Quick Bites', emoji: '⚡' },
-  { id: 'desserts', label: 'Desserts', emoji: '🍦' },
+  { id: 'all',        label: 'All',          emoji: '🍽️' },
+  { id: 'quickbites', label: 'Quick Bites',  emoji: '⚡' },
+  { id: 'teams',      label: 'Feed the Team',emoji: '🏆' },
+  { id: 'latenight',  label: 'Late Night',   emoji: '🌙' },
+  { id: 'delivery',   label: 'Delivery',     emoji: '📦' },
 ]
 
 export default function FoodByType() {
