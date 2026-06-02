@@ -1,7 +1,7 @@
 import restaurants from '../data/restaurants.json'
 import './LocalFavorites.css'
 
-const favorites = restaurants.filter(r => r.tags.includes('Local favorite'))
+const favorites = restaurants.filter(r => r.isLocal === true)
 
 export default function LocalFavorites() {
   return (

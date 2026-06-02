@@ -1,7 +1,11 @@
 import restaurants from '../data/restaurants.json'
 import './QuickPicks.css'
 
-const featured = restaurants.slice(0, 6)
+// Show locals first, then chains, limit to 6
+const featured = [
+  ...restaurants.filter(r => r.isLocal),
+  ...restaurants.filter(r => !r.isLocal),
+].slice(0, 6)
 
 export default function QuickPicks() {
   return (
@@ -43,9 +47,13 @@ export default function QuickPicks() {
 
 function typeEmoji(type) {
   const map = {
-    'Mexican': '🌮', 'Tex-Mex': '🌯', 'Burgers': '🍔',
-    'Home Cooking': '🍽️', 'Tacos': '🌮', 'Pizza': '🍕',
-    'Desserts & Ice Cream': '🍦', 'Family Dining': '🍴',
+    'Mexican': '🌮', 'Tacos & Mexican': '🌮', 'Tex-Mex': '🌯',
+    'Burgers': '🍔', 'Burgers & Fast Food': '🍔', 'Burgers & Drinks': '🍔',
+    'Burgers & Tacos': '🍔', 'Ice Cream & Burgers': '🍦',
+    'Pizza': '🍕', 'Fried Chicken': '🍗', 'Wings': '🍖',
+    'Mexican & Seafood': '🦐', 'Seafood & Latin': '🐟',
+    'Breakfast & Cafe': '☕', 'Coffee & Drinks': '☕',
+    'Boba & Drinks': '🧋', 'Shaved Ice & Sweets': '🍧',
   }
   return map[type] ?? '🍽️'
 }
