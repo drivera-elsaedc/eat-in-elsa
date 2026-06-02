@@ -1,0 +1,89 @@
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fav-card {
+  display: flex;
+  overflow: hidden;
+}
+
+.fav-accent {
+  width: 5px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.fav-body {
+  padding: 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.fav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.fav-type {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-dark);
+}
+
+.fav-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.fav-distance {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fav-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.fav-love {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 0.65rem 0.85rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.fav-love-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #8a6800;
+  margin-bottom: 0.2rem;
+}
+
+.fav-love-text {
+  font-size: 0.88rem;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.fav-btn {
+  font-size: 0.88rem;
+  padding: 0.6rem 1.25rem;
+  align-self: flex-start;
+}

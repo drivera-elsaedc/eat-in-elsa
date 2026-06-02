@@ -1,0 +1,88 @@
+.picks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.pick-card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.pick-photo-placeholder {
+  width: 90px;
+  min-height: 110px;
+  background: linear-gradient(135deg, #1A1A1A, #2D2D2D);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pick-emoji {
+  font-size: 2rem;
+}
+
+.pick-body {
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.pick-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pick-type {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pick-distance {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.pick-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.pick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+.pick-btn {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  align-self: flex-start;
+}
+
+@media (min-width: 640px) {
+  .picks-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pick-card {
+    flex-direction: column;
+  }
+  .pick-photo-placeholder {
+    width: 100%;
+    min-height: 120px;
+  }
+}
